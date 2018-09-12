@@ -12,6 +12,10 @@
 		3BCDACA42149723B00688CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCDACA32149723B00688CE4 /* Assets.xcassets */; };
 		3BCDACA72149723B00688CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BCDACA52149723B00688CE4 /* LaunchScreen.storyboard */; };
 		3BCDACAA2149723B00688CE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCDACA92149723B00688CE4 /* main.m */; };
+		3BCDACB6214977E200688CE4 /* KWESubreddit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCDACB5214977E200688CE4 /* KWESubreddit.m */; };
+		3BCDACB921497FA000688CE4 /* KWESubredditClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCDACB821497FA000688CE4 /* KWESubredditClient.m */; };
+		3BCDACBF2149A01400688CE4 /* KWESubredditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCDACBE2149A01400688CE4 /* KWESubredditTableViewController.swift */; };
+		3BCDACC22149A1A800688CE4 /* SubredditCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCDACC12149A1A800688CE4 /* SubredditCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,13 @@
 		3BCDACA62149723B00688CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BCDACA82149723B00688CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BCDACA92149723B00688CE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BCDACB4214977E200688CE4 /* KWESubreddit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWESubreddit.h; sourceTree = "<group>"; };
+		3BCDACB5214977E200688CE4 /* KWESubreddit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWESubreddit.m; sourceTree = "<group>"; };
+		3BCDACB721497FA000688CE4 /* KWESubredditClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWESubredditClient.h; sourceTree = "<group>"; };
+		3BCDACB821497FA000688CE4 /* KWESubredditClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWESubredditClient.m; sourceTree = "<group>"; };
+		3BCDACBD2149A01300688CE4 /* Reddit_ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reddit_ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BCDACBE2149A01400688CE4 /* KWESubredditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWESubredditTableViewController.swift; sourceTree = "<group>"; };
+		3BCDACC12149A1A800688CE4 /* SubredditCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,18 @@
 		3BCDAC992149723A00688CE4 /* Reddit_ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3BCDACC02149A19200688CE4 /* Views */,
+				3BCDACB3214974F900688CE4 /* ViewControllers */,
+				3BCDACB2214974F100688CE4 /* ModelController */,
+				3BCDACB1214974EA00688CE4 /* Model */,
+				3BCDACB0214973A300688CE4 /* Resources */,
+			);
+			path = Reddit_ObjC;
+			sourceTree = "<group>";
+		};
+		3BCDACB0214973A300688CE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3BCDAC9A2149723A00688CE4 /* AppDelegate.h */,
 				3BCDAC9B2149723A00688CE4 /* AppDelegate.m */,
 				3BCDACA02149723A00688CE4 /* Main.storyboard */,
@@ -63,7 +86,42 @@
 				3BCDACA82149723B00688CE4 /* Info.plist */,
 				3BCDACA92149723B00688CE4 /* main.m */,
 			);
-			path = Reddit_ObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BCDACB1214974EA00688CE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BCDACB4214977E200688CE4 /* KWESubreddit.h */,
+				3BCDACB5214977E200688CE4 /* KWESubreddit.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BCDACB2214974F100688CE4 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				3BCDACB721497FA000688CE4 /* KWESubredditClient.h */,
+				3BCDACB821497FA000688CE4 /* KWESubredditClient.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		3BCDACB3214974F900688CE4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BCDACBE2149A01400688CE4 /* KWESubredditTableViewController.swift */,
+				3BCDACBD2149A01300688CE4 /* Reddit_ObjC-Bridging-Header.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3BCDACC02149A19200688CE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BCDACC12149A1A800688CE4 /* SubredditCellTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,11 +150,13 @@
 		3BCDAC8F2149723A00688CE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KWE;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Kamil Wrobel";
 				TargetAttributes = {
 					3BCDAC962149723A00688CE4 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -137,7 +197,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCDACAA2149723B00688CE4 /* main.m in Sources */,
+				3BCDACBF2149A01400688CE4 /* KWESubredditTableViewController.swift in Sources */,
+				3BCDACC22149A1A800688CE4 /* SubredditCellTableViewCell.swift in Sources */,
 				3BCDAC9C2149723A00688CE4 /* AppDelegate.m in Sources */,
+				3BCDACB6214977E200688CE4 /* KWESubreddit.m in Sources */,
+				3BCDACB921497FA000688CE4 /* KWESubredditClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,15 +341,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = Reddit_ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reddit_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xwrobelekx.Reddit-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reddit_ObjC/ViewControllers/Reddit_ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -294,15 +362,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = Reddit_ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reddit_ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xwrobelekx.Reddit-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reddit_ObjC/ViewControllers/Reddit_ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
